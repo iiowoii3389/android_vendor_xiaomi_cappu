@@ -21,9 +21,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/bin/em_svr:system/bin/em_svr \
     vendor/xiaomi/cappu/proprietary/bin/ged_srv:system/bin/ged_srv \
     vendor/xiaomi/cappu/proprietary/bin/kpoc_charger:system/bin/kpoc_charger \
-    vendor/xiaomi/cappu/proprietary/bin/sn:system/bin/sn \
     vendor/xiaomi/cappu/proprietary/bin/storagemanagerd:system/bin/storagemanagerd \
     vendor/xiaomi/cappu/proprietary/bin/thermald:system/bin/thermald \
+    vendor/xiaomi/cappu/proprietary/etc/firmware/bcm94356wlsagbl_gpio_hwoob.txt:system/etc/firmware/bcm94356wlsagbl_gpio_hwoob.txt \
+    vendor/xiaomi/cappu/proprietary/etc/firmware/bt/BCM4354A2_001.003.015.0084.0268_ORC.hcd:system/etc/firmware/bt/BCM4354A2_001.003.015.0084.0268_ORC.hcd \
+    vendor/xiaomi/cappu/proprietary/etc/firmware/fw_bcmdhd.bin:system/etc/firmware/fw_bcmdhd.bin \
+    vendor/xiaomi/cappu/proprietary/etc/firmware/fw_bcmdhd_apsta.bin:system/etc/firmware/fw_bcmdhd_apsta.bin \
+    vendor/xiaomi/cappu/proprietary/etc/firmware/fw_bcmdhd_mfg.bin:system/etc/firmware/fw_bcmdhd_mfg.bin \
+    vendor/xiaomi/cappu/proprietary/etc/firmware/md32_d.bin:system/etc/firmware/md32_d.bin \
+    vendor/xiaomi/cappu/proprietary/etc/firmware/md32_p.bin:system/etc/firmware/md32_p.bin \
+    vendor/xiaomi/cappu/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
     vendor/xiaomi/cappu/proprietary/etc/init/ged_srv.rc:system/etc/init/ged_srv.rc \
     vendor/xiaomi/cappu/proprietary/etc/init/init.thermald.rc:system/etc/init/init.thermald.rc \
     vendor/xiaomi/cappu/proprietary/etc/init/kpoc_charger.rc:system/etc/init/kpoc_charger.rc \
@@ -54,9 +61,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/lib/libpq_cust_mtk.so:system/lib/libpq_cust_mtk.so \
     vendor/xiaomi/cappu/proprietary/lib/libsysenv_system.so:system/lib/libsysenv_system.so \
     vendor/xiaomi/cappu/proprietary/lib/libui_ext_fwk.so:system/lib/libui_ext_fwk.so \
+    vendor/xiaomi/cappu/proprietary/lib/vendor.mediatek.hardware.camera.device@1.1.so:system/lib/vendor.mediatek.hardware.camera.device@1.1.so \
+    vendor/xiaomi/cappu/proprietary/lib/vendor.mediatek.hardware.dfps@1.0.so:system/lib/vendor.mediatek.hardware.dfps@1.0.so \
     vendor/xiaomi/cappu/proprietary/lib/vendor.mediatek.hardware.nvram@1.0.so:system/lib/vendor.mediatek.hardware.nvram@1.0.so \
     vendor/xiaomi/cappu/proprietary/lib/vendor.mediatek.hardware.power@1.1.so:system/lib/vendor.mediatek.hardware.power@1.1.so \
     vendor/xiaomi/cappu/proprietary/lib/vendor.mediatek.hardware.pq@2.0.so:system/lib/vendor.mediatek.hardware.pq@2.0.so \
+    vendor/xiaomi/cappu/proprietary/lib/vendor.mediatek.hardware.wifi.supplicant@1.1.so:system/lib/vendor.mediatek.hardware.wifi.supplicant@1.1.so \
     vendor/xiaomi/cappu/proprietary/lib64/libccci_util_sys.so:system/lib64/libccci_util_sys.so \
     vendor/xiaomi/cappu/proprietary/lib64/libcustom_nvram_mtk.so:system/lib64/libcustom_nvram_mtk.so \
     vendor/xiaomi/cappu/proprietary/lib64/libcustom_prop.so:system/lib64/libcustom_prop.so \
@@ -82,12 +92,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/lib64/libpq_cust_mtk.so:system/lib64/libpq_cust_mtk.so \
     vendor/xiaomi/cappu/proprietary/lib64/libsysenv_system.so:system/lib64/libsysenv_system.so \
     vendor/xiaomi/cappu/proprietary/lib64/libui_ext_fwk.so:system/lib64/libui_ext_fwk.so \
+    vendor/xiaomi/cappu/proprietary/lib64/vendor.mediatek.hardware.camera.device@1.1.so:system/lib64/vendor.mediatek.hardware.camera.device@1.1.so \
+    vendor/xiaomi/cappu/proprietary/lib64/vendor.mediatek.hardware.dfps@1.0.so:system/lib64/vendor.mediatek.hardware.dfps@1.0.so \
     vendor/xiaomi/cappu/proprietary/lib64/vendor.mediatek.hardware.nvram@1.0.so:system/lib64/vendor.mediatek.hardware.nvram@1.0.so \
-    vendor/xiaomi/cappu/proprietary/lib64/vendor.mediatek.hardware.pq@2.0.so:system/lib64/vendor.mediatek.hardware.pq@2.0.so
+    vendor/xiaomi/cappu/proprietary/lib64/vendor.mediatek.hardware.power@1.1.so:system/lib64/vendor.mediatek.hardware.power@1.1.so \
+    vendor/xiaomi/cappu/proprietary/lib64/vendor.mediatek.hardware.pq@2.0.so:system/lib64/vendor.mediatek.hardware.pq@2.0.so \
+    vendor/xiaomi/cappu/proprietary/lib64/vendor.mediatek.hardware.wifi.supplicant@1.1.so:system/lib64/vendor.mediatek.hardware.wifi.supplicant@1.1.so
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/bin/autobt:$(TARGET_COPY_OUT_VENDOR)/bin/autobt \
     vendor/xiaomi/cappu/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
     vendor/xiaomi/cappu/proprietary/vendor/bin/hw/android.hardware.audio@2.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio@2.0-service-mediatek \
+    vendor/xiaomi/cappu/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-mediatek \
+    vendor/xiaomi/cappu/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service \
     vendor/xiaomi/cappu/proprietary/vendor/bin/hw/vendor.mediatek.hardware.power@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.power@1.1-service \
     vendor/xiaomi/cappu/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.0-service \
     vendor/xiaomi/cappu/proprietary/vendor/bin/kph:$(TARGET_COPY_OUT_VENDOR)/bin/kph \
@@ -124,6 +140,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/etc/ecc_list_OP17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP17.xml \
     vendor/xiaomi/cappu/proprietary/vendor/etc/ecc_list_OP18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP18.xml \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/android.hardware.audio@2.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio@2.0-service-mediatek.rc \
+    vendor/xiaomi/cappu/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
@@ -134,6 +151,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/nvram_agent_binder.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_agent_binder.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/rilproxy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rilproxy.rc \
+    vendor/xiaomi/cappu/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/vendor.mediatek.hardware.power@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.power@1.1-service.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.0-service.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/wifi2agps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi2agps.rc \
@@ -152,11 +170,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib/egl/libGLESv1_CM_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/egl/libGLESv2_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/android.hardware.audio@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@2.0-impl-mediatek.so \
+    vendor/xiaomi/cappu/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/gralloc.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/hwcomposer.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/memtrack.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/power.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/sensors.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.mt8173.so \
+    vendor/xiaomi/cappu/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.nvram@1.0-impl.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/vendor.mediatek.hardware.power@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.power@1.1-impl.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.0-impl.so \
@@ -333,11 +353,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/egl/libGLESv1_CM_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/egl/libGLESv2_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/android.hardware.audio@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@2.0-impl-mediatek.so \
+    vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/gralloc.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/hwcomposer.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/memtrack.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/power.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/sensors.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt8173.so \
+    vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-impl.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.0-impl.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.power@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.power@1.1-impl.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.pq@2.0-impl.so \
@@ -476,14 +498,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libsrv_um.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsrv_um.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysenv.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libteec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteec.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libufwriter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libufwriter.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libui_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libui_ext.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libusc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libusc.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libvcodec_utility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvcodec_utility.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.fingerprint@1.0.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/mtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtk-ril.so \
@@ -501,4 +520,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/vendor.mediatek.hardware.radio.deprecated@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.radio.deprecated@1.1_vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/vendor.mediatek.hardware.radio@2.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.radio@2.0_vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/vendor.mediatek.hardware.wifi.hostapd@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.wifi.hostapd@1.0_vendor.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.wifi.supplicant@1.1_vendor.so
+    vendor/xiaomi/cappu/proprietary/vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@1.1_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.wifi.supplicant@1.1_vendor.so \
+    vendor/xiaomi/cappu/proprietary/vendor/usr/keylayout/ft5x46.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5x46.kl \
+    vendor/xiaomi/cappu/proprietary/vendor/usr/keylayout/mt-snd-card_Headset.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/mt-snd-card_Headset.kl
