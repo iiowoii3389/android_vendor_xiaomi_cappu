@@ -213,7 +213,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libblisrc_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc_vendor.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libcam.camadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.camadapter.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libcam.camnode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.camnode.so \
@@ -386,7 +385,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libblisrc_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc_vendor.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libcam.camadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.camadapter.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libcam.camnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.camnode.so \
