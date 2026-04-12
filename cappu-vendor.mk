@@ -23,14 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/bin/kpoc_charger:system/bin/kpoc_charger \
     vendor/xiaomi/cappu/proprietary/bin/storagemanagerd:system/bin/storagemanagerd \
     vendor/xiaomi/cappu/proprietary/bin/thermald:system/bin/thermald \
-    vendor/xiaomi/cappu/proprietary/etc/firmware/bcm94356wlsagbl_gpio_hwoob.txt:system/etc/firmware/bcm94356wlsagbl_gpio_hwoob.txt \
-    vendor/xiaomi/cappu/proprietary/etc/firmware/bt/BCM4354A2_001.003.015.0084.0268_ORC.hcd:system/etc/firmware/bt/BCM4354A2_001.003.015.0084.0268_ORC.hcd \
-    vendor/xiaomi/cappu/proprietary/etc/firmware/fw_bcmdhd.bin:system/etc/firmware/fw_bcmdhd.bin \
-    vendor/xiaomi/cappu/proprietary/etc/firmware/fw_bcmdhd_apsta.bin:system/etc/firmware/fw_bcmdhd_apsta.bin \
-    vendor/xiaomi/cappu/proprietary/etc/firmware/fw_bcmdhd_mfg.bin:system/etc/firmware/fw_bcmdhd_mfg.bin \
-    vendor/xiaomi/cappu/proprietary/etc/firmware/md32_d.bin:system/etc/firmware/md32_d.bin \
-    vendor/xiaomi/cappu/proprietary/etc/firmware/md32_p.bin:system/etc/firmware/md32_p.bin \
-    vendor/xiaomi/cappu/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
     vendor/xiaomi/cappu/proprietary/etc/init/ged_srv.rc:system/etc/init/ged_srv.rc \
     vendor/xiaomi/cappu/proprietary/etc/init/init.thermald.rc:system/etc/init/init.thermald.rc \
     vendor/xiaomi/cappu/proprietary/etc/init/kpoc_charger.rc:system/etc/init/kpoc_charger.rc \
@@ -102,7 +94,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/bin/autobt:$(TARGET_COPY_OUT_VENDOR)/bin/autobt \
     vendor/xiaomi/cappu/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
     vendor/xiaomi/cappu/proprietary/vendor/bin/hw/android.hardware.audio@2.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio@2.0-service-mediatek \
-    vendor/xiaomi/cappu/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-mediatek \
     vendor/xiaomi/cappu/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mtkcodecservice@1.1-service \
     vendor/xiaomi/cappu/proprietary/vendor/bin/hw/vendor.mediatek.hardware.power@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.power@1.1-service \
     vendor/xiaomi/cappu/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.0-service \
@@ -128,6 +119,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     vendor/xiaomi/cappu/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
     vendor/xiaomi/cappu/proprietary/vendor/etc/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/agps_profiles_conf2.xml \
+    vendor/xiaomi/cappu/proprietary/vendor/etc/bluetooth/bt_vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_vendor.conf \
     vendor/xiaomi/cappu/proprietary/vendor/etc/cdma_ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list.xml \
     vendor/xiaomi/cappu/proprietary/vendor/etc/cdma_ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list_OP01.xml \
     vendor/xiaomi/cappu/proprietary/vendor/etc/cdma_ecc_list_OP09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list_OP09.xml \
@@ -140,7 +132,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/etc/ecc_list_OP17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP17.xml \
     vendor/xiaomi/cappu/proprietary/vendor/etc/ecc_list_OP18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP18.xml \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/android.hardware.audio@2.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio@2.0-service-mediatek.rc \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/init.thermal_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_manager.rc \
@@ -165,12 +156,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/xiaomi/cappu/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/xiaomi/cappu/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
+    vendor/xiaomi/cappu/proprietary/vendor/firmware/bcm94356wlsagbl_gpio_hwoob.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm94356wlsagbl_gpio_hwoob.txt \
+    vendor/xiaomi/cappu/proprietary/vendor/firmware/bt/BCM4354A2_001.003.015.0084.0268_ORC.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bt/BCM4354A2_001.003.015.0084.0268_ORC.hcd \
+    vendor/xiaomi/cappu/proprietary/vendor/firmware/fw_bcmdhd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd.bin \
+    vendor/xiaomi/cappu/proprietary/vendor/firmware/fw_bcmdhd_apsta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_apsta.bin \
+    vendor/xiaomi/cappu/proprietary/vendor/firmware/fw_bcmdhd_mfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd_mfg.bin \
+    vendor/xiaomi/cappu/proprietary/vendor/firmware/md32_d.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/md32_d.bin \
+    vendor/xiaomi/cappu/proprietary/vendor/firmware/md32_p.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/md32_p.bin \
     vendor/xiaomi/cappu/proprietary/vendor/firmware/rgx.fw.signed:$(TARGET_COPY_OUT_VENDOR)/firmware/rgx.fw.signed \
+    vendor/xiaomi/cappu/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/xiaomi/cappu/proprietary/vendor/lib/egl/libEGL_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/egl/libGLESv1_CM_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/egl/libGLESv2_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/android.hardware.audio@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@2.0-impl-mediatek.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so \
+    vendor/xiaomi/cappu/proprietary/vendor/lib/hw/audio.primary.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/gralloc.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/hwcomposer.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/hw/memtrack.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.mt8173.so \
@@ -214,11 +213,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libblisrc_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc_vendor.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_hw_test.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk_pure.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib/libbluetooth_relayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_relayer.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib/libbluetoothem_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetoothem_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libcam.camadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.camadapter.so \
@@ -353,7 +347,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/egl/libGLESv1_CM_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/egl/libGLESv2_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/android.hardware.audio@2.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@2.0-impl-mediatek.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so \
+    vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/audio.primary.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/gralloc.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/hwcomposer.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mt8173.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/hw/memtrack.mt8173.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.mt8173.so \
@@ -392,11 +386,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libblisrc_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc_vendor.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_hw_test.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk_pure.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libbluetooth_relayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_relayer.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libbluetoothem_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetoothem_mtk.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libcam.camadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.camadapter.so \
