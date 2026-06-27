@@ -45,22 +45,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/etc/.tp/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
     vendor/xiaomi/cappu/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/agps_profiles_conf2.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/bluetooth/bt_vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_vendor.conf \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/cdma_ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/cdma_ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list_OP01.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/cdma_ecc_list_OP09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list_OP09.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/cdma_ecc_list_OP12.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list_OP12.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/cdma_ecc_list_ss.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cdma_ecc_list_ss.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/ecc_list_OP09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP09.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/ecc_list_OP12.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP12.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/ecc_list_OP17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP17.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/ecc_list_OP18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP18.xml \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/android.hardware.audio@2.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio@2.0-service-mediatek.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.0-service.widevine.rc \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/custom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/custom.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
@@ -77,15 +63,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.0-service.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/wifi2agps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi2agps.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/spn-conf-op09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/spn-conf-op09.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/throttle.sh:$(TARGET_COPY_OUT_VENDOR)/etc/throttle.sh \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
-    vendor/xiaomi/cappu/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
     vendor/xiaomi/cappu/proprietary/vendor/firmware/bcm94356wlsagbl_gpio_hwoob.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm94356wlsagbl_gpio_hwoob.txt \
     vendor/xiaomi/cappu/proprietary/vendor/firmware/bt/BCM4354A2_001.003.015.0084.0268_ORC.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bt/BCM4354A2_001.003.015.0084.0268_ORC.hcd \
     vendor/xiaomi/cappu/proprietary/vendor/firmware/fw_bcmdhd.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fw_bcmdhd.bin \
@@ -115,6 +92,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.log.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/lib3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/lib3a_sample.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a_sample.so \
+    vendor/xiaomi/cappu/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libBnMtkCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libBnMtkCodec.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libClearMotionFW.so:$(TARGET_COPY_OUT_VENDOR)/lib/libClearMotionFW.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHEVCdec_sa.ca7.android.so \
@@ -293,6 +271,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.log.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/lib3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/lib3a_sample.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a_sample.so \
+    vendor/xiaomi/cappu/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libBnMtkCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBnMtkCodec.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libIMGegl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libIMGegl.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libJpgDecPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgDecPipe.so \
