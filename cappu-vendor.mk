@@ -92,7 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.log.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/lib3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/lib3a_sample.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a_sample.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libBnMtkCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libBnMtkCodec.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libClearMotionFW.so:$(TARGET_COPY_OUT_VENDOR)/lib/libClearMotionFW.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHEVCdec_sa.ca7.android.so \
@@ -271,7 +270,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.log.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/lib3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/lib3a_sample.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a_sample.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libBnMtkCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBnMtkCodec.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libIMGegl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libIMGegl.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libJpgDecPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgDecPipe.so \
