@@ -47,6 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/etc/.tp/thermal.off.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.off.conf \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/android.hardware.audio@2.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio@2.0-service-mediatek.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.0-service.widevine.rc \
+    vendor/xiaomi/cappu/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/custom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/custom.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
     vendor/xiaomi/cappu/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
@@ -149,7 +150,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libcam_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam_utils.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libcamalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libcamdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameracustom.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libccap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libccap.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libccci_util.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcustom_nvram.so \
@@ -322,7 +322,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libcam_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam_utils.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libcamalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libcamdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamdrv.so \
-    vendor/xiaomi/cappu/proprietary/vendor/lib64/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libccap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccap.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccci_util.so \
     vendor/xiaomi/cappu/proprietary/vendor/lib64/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcustom_nvram.so \
